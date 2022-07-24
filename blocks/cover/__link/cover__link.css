@@ -1,0 +1,42 @@
+.cover__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 740px;
+    background-image: url(../../../images/transsib.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 0;
+    position: relative;
+}
+.cover__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+    .cover__link {
+    min-height: 640px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cover__link {
+    min-height: 480px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .cover__link {
+    min-height: 200px;
+    row-gap: 16px;
+    }
+}
