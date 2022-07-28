@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 740px;
-    background-image: url(../../../images/transsib.png);
+    background-image: url(../../../images/transsib.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,6 +12,7 @@
     text-decoration: none;
     z-index: 0;
     position: relative;
+    row-gap: 32px;
 }
 .cover__link::before {
     content: "";
@@ -23,6 +24,9 @@
     background-color: #2A2C2F;
     opacity: 0.3;
     z-index: -1;
+}
+.cover__link:hover::before {
+    opacity: 0.8;
 }
 @media screen and (max-width: 1024px) {
     .cover__link {
