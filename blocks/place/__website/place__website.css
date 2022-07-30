@@ -1,7 +1,7 @@
 .place__website {
     align-self: end;
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 460px) {
     .place__website {
         padding: 0px 16px;
     }
